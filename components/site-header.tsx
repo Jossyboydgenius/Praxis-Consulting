@@ -7,11 +7,11 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Values", href: "#values" },
-  { label: "Founder", href: "#founder" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Values", href: "/#values" },
+  { label: "Founder", href: "/#founder" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export function SiteHeader() {
@@ -74,7 +74,7 @@ export function SiteHeader() {
 
           <div className="hidden lg:block">
             <Link
-              href="#contact"
+              href="/#contact"
               className="inline-flex items-center rounded-full bg-gold px-5 py-2.5 text-sm font-medium text-navy hover:bg-gold-soft transition-colors"
             >
               Get in touch
@@ -136,7 +136,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
-            href="#contact"
+            href="/#contact"
             onClick={() => setOpen(false)}
             className={cn(
               "mt-2 inline-flex justify-center items-center rounded-full bg-gold px-5 py-2.5 text-sm font-medium text-navy transition-all duration-300",
