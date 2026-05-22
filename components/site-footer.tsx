@@ -53,7 +53,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
-            <Link href="#top" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/images/logo.png"
                 alt="Praxis Consulting"
