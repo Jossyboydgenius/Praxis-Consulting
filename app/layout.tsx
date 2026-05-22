@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description:
     "Praxis Consulting provides high-quality accounting, tax consulting, and assurance services to businesses across Ghana. Through practical, actionable insights and unwavering integrity, we help clients achieve compliance, optimize performance, and unlock sustainable growth.",
   applicationName: "Praxis Consulting",
-  generator: "v0.app",
+  generator: "Praxis Consulting",
   icons: {
     icon: "/images/icon.png",
     apple: "/images/icon.png",
