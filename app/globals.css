@@ -110,7 +110,7 @@
     @apply font-serif font-normal text-5xl leading-15 tracking-tight;
   }
   .heading-hero {
-    @apply font-serif font-normal tracking-tight text-[56px] leading-17.5 sm:text-[64px] sm:leading-19.5 lg:text-[72px] lg:leading-21.5;
+    @apply font-serif font-normal tracking-tight text-[56px] leading-[1.1] sm:text-[64px] sm:leading-[1.1] lg:text-[72px] lg:leading-[1.1];
   }
   .image-tilt {
     border-radius: var(--radius-xl);
