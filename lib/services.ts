@@ -34,7 +34,7 @@ export const services: Service[] = [
       "Financial statements",
     ],
     overview:
-      "We take the day-to-day burden of bookkeeping off your plate and turn raw transactions into clear, decision-ready financial insight. From sole proprietors to multi-entity groups, our accounting team works alongside you to keep your books clean, compliant, and truly useful.",
+      "We take the day-to-day burden of bookkeeping off your plate and turn raw transactions into clear, decision-ready business insight. From sole proprietors to multi-entity groups, our accounting team works alongside you to keep your books clean, compliant, and truly useful.",
     offerings: [
       {
         title: "Bookkeeping & Ledger Maintenance",
@@ -151,16 +151,16 @@ export const services: Service[] = [
     slug: "business-advisory",
     icon: Lightbulb,
     title: "Business Advisory",
-    tagline: "Turn financial data into better decisions.",
+    tagline: "Turn accounting data into better decisions.",
     description:
-      "Strategic guidance that turns financial data into decisions, budgeting, forecasting, and growth planning.",
+      "Strategic guidance that turns reports and numbers into decisions, budgeting, forecasting, and growth planning.",
     points: [
       "Budgeting & forecasting",
-      "Financial modelling",
+      "Business modelling",
       "Strategy & KPIs",
     ],
     overview:
-      "Great numbers are only half the story. Our advisory team works as an extension of your leadership, translating financials into strategy, pressure-testing plans, and helping you move faster with confidence.",
+      "Great numbers are only half the story. Our advisory team works as an extension of your leadership, translating numbers into strategy, pressure-testing plans, and helping you move faster with confidence.",
     offerings: [
       {
         title: "Budgeting & Forecasting",
@@ -168,7 +168,7 @@ export const services: Service[] = [
           "Annual budgets, rolling forecasts, and cash flow projections that actually guide decisions.",
       },
       {
-        title: "Financial Modelling",
+        title: "Business Modelling",
         description:
           "Custom three-statement models for fundraising, investment, M&A, and scenario planning.",
       },

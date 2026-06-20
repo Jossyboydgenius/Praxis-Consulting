@@ -53,9 +53,9 @@ export function SiteHeader() {
             <Image
               src="/images/logo.png"
               alt="Praxis Consulting"
-              width={320}
-              height={96}
-              className="h-14 md:h-16 w-auto"
+              width={248}
+              height={60}
+              className="h-9 md:h-11 w-auto"
               priority
             />
           </Link>

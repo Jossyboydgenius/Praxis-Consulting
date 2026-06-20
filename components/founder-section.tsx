@@ -45,7 +45,7 @@ export function FounderSection() {
               </span>
               <h2 className="mt-3 heading-display text-navy text-balance">
                 A <em className="text-gold italic font-normal">seasoned</em>{" "}
-                voice in Ghanaian finance.
+                voice in Ghanaian accounting.
               </h2>
               <p className="mt-6 text-base md:text-lg text-charcoal/80 leading-relaxed">
                 With over {experienceYears} years of hands-on experience in
@@ -101,7 +101,7 @@ export function FounderSection() {
 
             <Reveal direction="up" delay={320}>
               <blockquote className="mt-10 border-l-2 border-gold pl-6 font-serif italic font-normal text-[20px] leading-8.25 text-[oklab(0.22_-0.00173648_-0.00984808/0.9)]">
-                &ldquo;Good financial advice should be practical. At Praxis, we
+                &ldquo;Good professional advice should be practical. At Praxis, we
                 turn numbers into decisions that move Ghanaian businesses
                 forward.&rdquo;
                 <footer className="mt-4 not-italic font-sans text-xs uppercase tracking-[0.2em] text-charcoal/60">

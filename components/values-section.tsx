@@ -31,7 +31,7 @@ const values = [
     icon: Sparkles,
     name: "Innovation",
     description:
-      "Modern tools and forward-thinking approaches to solve real financial challenges.",
+      "Modern tools and forward-thinking approaches to solve real accounting and business challenges.",
   },
   {
     icon: CheckCircle2,

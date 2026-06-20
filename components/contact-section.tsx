@@ -106,8 +106,7 @@ export function ContactSection() {
               </span>
               <h2 className="mt-3 heading-display text-navy text-balance">
                 Let&apos;s talk about your{" "}
-                <em className="text-gold italic font-normal">next</em> financial
-                move.
+                <em className="text-gold italic font-normal">accounting</em> needs.
               </h2>
               <p className="mt-5 text-base md:text-lg text-charcoal/75 leading-relaxed text-pretty">
                 Whether you need a second opinion, a full audit, or a long-term

@@ -46,8 +46,8 @@ export function HeroSection() {
             </Reveal>
             <Reveal direction="up" delay={160}>
               <p className="mt-6 text-base md:text-lg text-white/70 max-w-xl text-pretty leading-relaxed">
-                We help Ghanaian businesses translate complex financial
-                realities into practical, actionable plans. With deep local
+                We help Ghanaian businesses translate complex accounting and tax
+                requirements into practical, actionable plans. With deep local
                 expertise and global standards, we support you at every stage of
                 growth.
               </p>

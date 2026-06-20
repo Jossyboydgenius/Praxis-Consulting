@@ -13,12 +13,12 @@ export function ServicesSection() {
               What we do
             </span>
             <h2 className="mt-3 heading-display text-navy text-balance">
-              Comprehensive financial services, one{" "}
+              Comprehensive accounting and advisory, one{" "}
               <em className="text-gold italic font-normal">trusted</em> partner.
             </h2>
             <p className="mt-5 text-base md:text-lg text-charcoal/75 leading-relaxed text-pretty">
-              From daily bookkeeping to boardroom-ready audits, we cover the
-              full financial lifecycle of your business.
+              From daily bookkeeping to boardroom-ready audits, we manage all your
+              accounting, tax, and compliance needs.
             </p>
           </div>
         </Reveal>

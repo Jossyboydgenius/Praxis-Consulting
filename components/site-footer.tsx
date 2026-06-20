@@ -57,9 +57,9 @@ export function SiteFooter() {
               <Image
                 src="/images/logo.png"
                 alt="Praxis Consulting"
-                width={320}
-                height={96}
-                className="h-16 w-auto"
+                width={248}
+                height={60}
+                className="h-11 w-auto"
               />
             </Link>
             <p className="mt-5 text-sm text-white/70 leading-relaxed max-w-sm">

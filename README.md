@@ -12,7 +12,7 @@ Praxis Consulting is a modern marketing site for an accounting and assurance fir
 
 ## Vision statement
 
-To be the leading accounting and assurance firm in Ghana, delivering practical financial solutions that empower businesses to thrive, drive economic growth, and build a stronger West Africa.
+To be the leading accounting and assurance firm in Ghana, delivering practical accounting and advisory solutions that empower businesses to thrive, drive economic growth, and build a stronger West Africa.
 
 ## Mission statement
 
@@ -23,7 +23,7 @@ Praxis Consulting provides high-quality accounting, tax consulting, and assuranc
 - Integrity: We uphold the highest ethical standards in every interaction, building trust through transparency and honesty.
 - Excellence: We pursue superior quality and continuous improvement in all our services.
 - Client-Centric Practicality: We deliver actionable solutions tailored to Ghanaian businesses, putting client success first.
-- Innovation: We embrace modern tools and forward-thinking approaches to solve real-world financial challenges.
+- Innovation: We embrace modern tools and forward-thinking approaches to solve real-world accounting and business challenges.
 - Accountability: We take ownership of our work and support Ghana's economic development with responsible practices.
 - Collaboration: We work as a unified team to deliver seamless and comprehensive support.
 
