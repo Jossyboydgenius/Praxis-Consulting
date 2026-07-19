@@ -25,9 +25,11 @@ export async function POST(request: Request) {
       },
     });
 
+    const senderEmail = process.env.SMTP_SENDER || process.env.SMTP_USER || "info@praxisconsultinggh.org";
+
     // Prepare email layout
     const mailOptions = {
-      from: `"Praxis Consulting Website" <${process.env.SMTP_USER}>`,
+      from: `"Praxis Consulting Website" <${senderEmail}>`,
       to: process.env.CONTACT_RECEIVER_EMAIL || "wiajoseph@gmail.com",
       subject: `New Contact Form Inquiry from ${name}`,
       text: `
