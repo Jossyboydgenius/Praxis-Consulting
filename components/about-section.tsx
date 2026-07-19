@@ -43,7 +43,7 @@ export function AboutSection() {
               </span>
               <h2 className="mt-3 heading-display text-navy text-balance">
                 Accounting expertise built on{" "}
-                <em className="text-gold italic font-normal">local</em>{" "}
+                <em className="text-gold italic font-normal">local and global</em>{" "}
                 knowledge.
               </h2>
               <p className="mt-6 text-base md:text-lg text-charcoal/80 leading-relaxed">

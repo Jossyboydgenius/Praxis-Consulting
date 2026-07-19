@@ -10,6 +10,73 @@ export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
 }
 
+const serviceSEOData: Record<
+  string,
+  { seoTitle: string; seoDescription: string; keywords: string[] }
+> = {
+  accounting: {
+    seoTitle: "Accounting & Bookkeeping Services in Ghana",
+    seoDescription: "Professional accounting and bookkeeping services in Ghana. Praxis Consulting provides monthly management accounts, financial reporting, and cloud accounting setup in Accra.",
+    keywords: [
+      "Accounting services for businesses in Ghana",
+      "Outsourced accounting services Ghana",
+      "SME accounting services Ghana",
+      "Bookkeeping services in Ghana",
+      "Financial reporting services Ghana",
+      "Corporate accounting solutions Ghana",
+      "Accra bookkeeping",
+      "Accounting firms in Ghana",
+      "Best accounting firm in Ghana",
+    ],
+  },
+  "tax-consulting": {
+    seoTitle: "Tax Consulting & Compliance Services in Ghana",
+    seoDescription: "Expert tax consultants in Ghana. We assist with GRA compliance, corporate income tax planning, VAT, withholding tax filing, and audits from Spintex, Accra.",
+    keywords: [
+      "Tax consulting services in Ghana",
+      "Tax consultants in Ghana",
+      "Ghana tax compliance services",
+      "Tax consultant for SMEs Ghana",
+      "GRA compliance Accra",
+      "Withholding tax compliance Ghana",
+      "VAT filings Ghana",
+    ],
+  },
+  "business-advisory": {
+    seoTitle: "Business Advisory & Consulting in Ghana",
+    seoDescription: "Unlock growth with business advisory services in Ghana. We provide budgeting, forecasting, cash flow modeling, and investor readiness support.",
+    keywords: [
+      "Business advisory services in Ghana",
+      "Corporate advisory Ghana",
+      "SME business consulting Ghana",
+      "Business compliance services Ghana",
+      "Budgeting and forecasting Ghana",
+    ],
+  },
+  "assurance-services": {
+    seoTitle: "Audit & Assurance Services in Ghana",
+    seoDescription: "Independent audit and assurance services in Ghana. Build trust with statutory audits, internal controls audit, and compliance reviews in Accra.",
+    keywords: [
+      "Assurance services in Ghana",
+      "Audit firms in Ghana",
+      "External audit services Ghana",
+      "Internal audit services Ghana",
+      "Audit and assurance firm Ghana",
+      "Statutory audits Ghana",
+    ],
+  },
+  "payroll-management": {
+    seoTitle: "Payroll Management Services in Ghana",
+    seoDescription: "Outsourced payroll services in Ghana. Praxis Consulting handles monthly payroll processing, SSNIT, and PAYE filings accurately and on time.",
+    keywords: [
+      "Payroll management services Ghana",
+      "Outsourced payroll Ghana",
+      "SSNIT and PAYE filings Ghana",
+      "Employee payroll Accra",
+    ],
+  },
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -18,9 +85,36 @@ export async function generateMetadata({
   const { slug } = await params;
   const service = getServiceBySlug(slug);
   if (!service) return { title: "Service not found | Praxis Consulting" };
+
+  const seo = serviceSEOData[slug] || {
+    seoTitle: `${service.title} | Praxis Consulting`,
+    seoDescription: service.description,
+    keywords: [],
+  };
+
   return {
-    title: `${service.title} | Praxis Consulting`,
-    description: service.description,
+    title: seo.seoTitle,
+    description: seo.seoDescription,
+    keywords: seo.keywords,
+    openGraph: {
+      title: `${seo.seoTitle} | Praxis Consulting`,
+      description: seo.seoDescription,
+      type: "website",
+      images: [
+        {
+          url: "/images/hero-team.jpg",
+          width: 1200,
+          height: 630,
+          alt: `${service.title} - Praxis Consulting`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${seo.seoTitle} | Praxis Consulting`,
+      description: seo.seoDescription,
+      images: ["/images/hero-team.jpg"],
+    },
   };
 }
 

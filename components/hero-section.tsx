@@ -48,8 +48,8 @@ export function HeroSection() {
               <p className="mt-6 text-base md:text-lg text-white/70 max-w-xl text-pretty leading-relaxed">
                 We help Ghanaian businesses translate complex accounting and tax
                 requirements into practical, actionable plans. With deep local
-                expertise and global standards, we support you at every stage of
-                growth.
+                and global expertise and standards, we support you at every
+                stage of growth.
               </p>
             </Reveal>
 
