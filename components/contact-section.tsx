@@ -16,7 +16,7 @@ import { Reveal } from "./reveal";
 
 const PHONE_DISPLAY = "054 863 6721";
 const PHONE_TEL = "+233548636721";
-const EMAIL = "info@praxisconsulting.com";
+const EMAIL = "info@praxisconsulting.org";
 const ADDRESS_LINE_1 = "K11 Hydraform Estate, Spintex";
 const ADDRESS_LINE_2 = "Accra, Ghana";
 const MAPS_URL =

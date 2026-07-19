@@ -102,7 +102,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: "/images/hero-team.jpg",
+          url: "https://praxisconsultinggh.org/images/hero-team.jpg",
           width: 1200,
           height: 630,
           alt: `${service.title} - Praxis Consulting`,
@@ -113,7 +113,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${seo.seoTitle} | Praxis Consulting`,
       description: seo.seoDescription,
-      images: ["/images/hero-team.jpg"],
+      images: ["https://praxisconsultinggh.org/images/hero-team.jpg"],
     },
   };
 }

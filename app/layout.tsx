@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     siteName: "Praxis Consulting",
     images: [
       {
-        url: "/images/hero-team.jpg",
+        url: "https://praxisconsultinggh.org/images/hero-team.jpg",
         width: 1200,
         height: 630,
         alt: "Praxis Consulting Team",
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     title: "Praxis Consulting | Accounting, Tax & Assurance in Ghana",
     description:
       "Professional accounting firm in Ghana. Praxis Consulting offers chartered accounting, tax consulting, assurance, payroll, and business advisory services in Spintex, Accra.",
-    images: ["/images/hero-team.jpg"],
+    images: ["https://praxisconsultinggh.org/images/hero-team.jpg"],
   },
   robots: {
     index: true,
