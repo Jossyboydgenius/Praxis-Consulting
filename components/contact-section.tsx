@@ -72,25 +72,56 @@ export function ContactSection() {
 
     setSubmitting(true);
 
-    // Simulate async send (replace with real API call later)
-    await new Promise((resolve) => setTimeout(resolve, 700));
+    try {
+      const formData = new FormData(e.currentTarget);
+      const name = formData.get("name");
+      const phone = formData.get("phone");
+      const company = formData.get("company");
+      const message = formData.get("message");
 
-    setSubmitting(false);
-    setSent(true);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          phone,
+          company,
+          service,
+          message,
+        }),
+      });
 
-    // Reset the form fields
-    formRef.current?.reset();
-    setService("");
+      const result = await response.json();
 
-    // Celebration
-    fireConfetti();
-    toast.success("Message sent successfully", {
-      description:
-        "Thank you for reaching out. Our team will get back to you within one business day.",
-      className: "font-serif font-normal",
-      descriptionClassName: "font-sans",
-      duration: 6000,
-    });
+      if (!response.ok) {
+        throw new Error(result.error || "Something went wrong.");
+      }
+
+      setSent(true);
+
+      // Reset the form fields
+      formRef.current?.reset();
+      setService("");
+
+      // Celebration
+      fireConfetti();
+      toast.success("Message sent successfully", {
+        description:
+          "Thank you for reaching out. Our team will get back to you within one business day.",
+        className: "font-serif font-normal",
+        descriptionClassName: "font-sans",
+        duration: 6000,
+      });
+    } catch (error: any) {
+      console.error("Error submitting contact form:", error);
+      toast.error("Failed to send message", {
+        description: error.message || "An unexpected error occurred. Please try again later.",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const resetToForm = () => setSent(false);
@@ -347,8 +378,17 @@ export function ContactSection() {
                     disabled={submitting}
                     className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-medium text-navy hover:bg-gold-soft transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    {submitting ? "Sending..." : "Send message"}
-                    <Send className="h-4 w-4" />
+                    {submitting ? (
+                      <>
+                        Sending...
+                        <div className="h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white"></div>
+                      </>
+                    ) : (
+                      <>
+                        Send message
+                        <Send className="h-4 w-4" />
+                      </>
+                    )}
                   </button>
                 </div>
               </form>
